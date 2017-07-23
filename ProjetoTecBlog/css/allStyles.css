@@ -1,0 +1,51 @@
+/*******Limpando as formatações padrão*******/
+*{margin: 0; padding: 0;}
+
+/*******Configurações padrão*******/
+body{font-size: 16px; font-family: "Trebuchet MS", Helvetica, sans-serif; background: #E1DDDD;}
+.color{color:#EE1A0A;}
+
+/******Barra de navegação******/
+#navbar{
+	position: fixed;
+	background: #FFF; 
+	border-bottom: 1px solid #D8D8D8; 
+	height: 43px;
+	width: 100%;
+	top: 0;
+}
+#navbar #area{width: 720px; margin: 0 auto;}
+#navbar #area #logo{float: left;}
+#navbar #area #menu{float: right; padding: 10px 0;}
+
+/******Links******/
+#menu a{text-decoration: none; padding: 5px 10px;}
+#menu a:link{color:#D66565;}
+#menu a:visited{color:#D66565;}
+#menu a:hover{background:#EE1A0A; color:#FFF;}
+#menu a:active{color:#000;}
+
+/******Postagens******/
+#principal{width: 720px; margin:55px auto 10px auto;}
+#principal #postagem{
+	background: #fff; 
+	padding: 10px; 
+	margin-bottom: 10px; 
+	border-radius: 2px;}
+#principal #postagem .data_postagem{
+	font-size: 14px; 
+	border-bottom: 1px solid #F4F4F4; 
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+#principal #postagem .img_postagem{float: left; margin: 0 10px 5px 0;}
+#principal #postagem .conteudo_postagem{text-align: justify;}
+#principal #postagem .titulo_postagem{color: #EE1A0A;}
+#principal #postagem .postado_por{
+	border-left: 5px solid #D8D8D8; 
+	padding-left: 5px;
+	display: block;
+	margin-top: 10px;
+}
+
