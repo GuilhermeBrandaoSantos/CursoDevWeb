@@ -7,9 +7,13 @@
 
     <title>Música para todos - Spotify</title>
 
+    <!--ICO -->
+    <link rel="icon" sizes="192x192" href="img/favicon.png">
+
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,7 +23,38 @@
     <![endif]-->
   </head>
   <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparent">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="navbar-header">
 
+          <!-- Toggle button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alternar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">
+            <span class="img-logo">Spotify</span>
+            <!-- <object type="image/svg+xml" data="img/spotify.svg" class="img-logo" /> -->
+          </a>
+        </div>
+
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#premium.html">Premium</a></li>
+            <li><a href="#ajuda.html">Ajuda</a></li>
+            <li><a href="#baixar.html">Baixar</a></li>
+            <li class="divisor" role="separator"></li>
+            <li><a href="#inscrever.html">Inscrever-se</a></li>
+            <li><a href="#entrar.html">Entrar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
