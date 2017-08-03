@@ -4,15 +4,32 @@
 * @version 0.1 
 */
 /* ===================== Typography ===================== */
-h1{font-size: 100px; font-weight: 900; letter-spacing: -0.05em; margin-bottom: 50px;}
+h1{font-weight: 900; letter-spacing: -0.05em; margin-bottom: 50px;}
 h2{font-size: 50px; font-weight: 700; letter-spacing: -0.04em;}
 h3{font-size: 30px; font-weight: 700; letter-spacing: -0.04em;}
 section#service h2, section#service h3{color: #7c25f8}
 section#resources h3{color: #9bf0e1;}
 footer#footer h4{color: #919496; font-size: 12px; text-transform: uppercase;}
 
+/*Media query*/
+@media screen and (max-width: 767px) {
+	h1 {font-size: 50px;} 
+	.banner>.banner-text>a.btn-custom{margin: 10px 15px;}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {font-size: 70px;} 
+}
+
+@media screen and (min-width: 992px) {
+	h1 {font-size: 80px;} 
+}
+
+@media screen and (min-width: 1200px) {
+	h1 {font-size: 100px;} 
+}
 /* ===================== Layout ===================== */
-html, body, .banner{height: 100%;}
+html, body, .banner{height: 100%; overflow: auto;}
 
 body{
 	background: url('../img/capa.png'), url('../img/ruido.png'),linear-gradient(50deg,#ff4169,#7c26f8);
@@ -46,9 +63,7 @@ nav.navbar-inverse .navbar-nav>li>a:hover{color: #9BF0E1}
 	border-radius: 500px; 
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px; 
-	padding: 10px 35px;
 	text-transform: uppercase;
-	margin: 0px 15px;
 	transition: background 0.5s, color 0.5s;
 }
 .banner>.banner-text>a.btn-purpple{background: #7c25f8;}
