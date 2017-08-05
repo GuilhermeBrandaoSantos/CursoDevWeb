@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Estourando balões</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="nivelJogo">
+						<h2>Estoure os Balões</h2>
+						<img src="imagens/balao_azul_grande_estourado.png" class="img-responsive">
+						<select class="form-control" id="nivel-jogo">
+							<option value="" disabled selected>Selecione o nivel</option>
+							<option value="1">Fácil</option>
+							<option value="2">Normal</option>
+							<option value="3">Difícil</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="imgIniciar">
+						<img src="imagens/iniciar.png" class="img-responsive" onclick="iniciaJogo()" alt="Inciar">
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+	</body>
+	
+</html>

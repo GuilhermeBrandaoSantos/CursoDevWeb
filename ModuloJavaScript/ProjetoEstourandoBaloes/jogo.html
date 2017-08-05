@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Estourando balões</title>
+		<!-- Bootstrap -->
+		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+		<link rel="stylesheet" type="text/css" href="css/jogo.css">
+
+		<script type="text/javascript" src="js/jogo.js"></script>
+	</head>
+	<body onload="iniciaJogo()">
+		<div style="float:left; width:auto; height:500px; background: #FFF; margin: 5px;">
+			<table border="0">
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande.png" />
+					</td>
+					<td>
+						<span id="baloes_inteiros" style="font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table border="0">
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande_estourado.png" />
+					</td>
+					<td>
+						<span id="baloes_estourados"  style="font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<table border="0" style="width: 140px; height: 132px;">
+				<tr>
+					<td style="background: url('imagens/cronometro.png'); text-align: center;">
+						<span id="cronometro" style="color: red; font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario.png'); background-position: bottom;"></div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+	</body>
+	
+</html>

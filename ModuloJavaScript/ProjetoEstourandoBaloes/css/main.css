@@ -1,0 +1,23 @@
+/*
+*
+* @author Guilherme Brandão
+* @version 0.1 
+*/
+/* ===================== Typography ===================== */
+h2{font-size: 50px; font-weight: 700; letter-spacing: -0.04em;}
+
+/* ===================== Layout ===================== */
+html, body{height: 100%; overflow: auto;}
+
+body{
+	background-color: rgb(238, 247, 233); 
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden
+}
+
+/*Nivel do jogo*/
+.nivelJogo{display: table; margin: 100px auto;}
+.nivelJogo img{display: table; margin: 0 auto;}
+.nivelJogo select{margin-top: 20px;}
+.imgIniciar{display: table; margin: 0 auto;}

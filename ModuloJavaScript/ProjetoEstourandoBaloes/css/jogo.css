@@ -1,0 +1,29 @@
+/*
+*
+* @author Guilherme Brandão
+* @version 0.1 
+*/
+/* ===================== Typography ===================== */
+
+/* ===================== Layout ===================== */
+.balao{
+	border: 1px solid red;
+	margin-top: 10px;
+	padding: 10px;
+	float: left;
+	
+}
+.balao2{
+	border: 1px solid red;
+	margin-top: 10px;
+	padding: 10px;
+	float: left;
+	
+}
+.cenario{
+	border: 1px solid red;
+	margin-top: 10px;
+	float: right;
+	display: table;
+	
+}
