@@ -54,6 +54,7 @@ function contagem_tempo(segundos) {
 }
 
 function game_over() {
+	remove_eventos_baloes();
 	alert("Você perdeu !!! Não estourou todos os balões.") // Aviso que o jogo terminou
 }
 
@@ -109,4 +110,15 @@ function situacao_jogo(baloes_inteiros) {
 
 function parar_jogo(){
 	clearTimeout(timerId);
+}
+
+function remove_eventos_baloes() {
+    var i = 1; //contado para recuperar balões por id
+    
+    //percorre o elementos de acordo com o id e só irá sair do laço quando não houver correspondência com elemento
+    while(document.getElementById('balao'+i)) {
+        //retira o evento onclick do elemnto
+        document.getElementById('balao'+i).onclick = '';
+        i++; //faz a iteração da variávei i
+    }
 }
