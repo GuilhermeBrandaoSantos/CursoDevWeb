@@ -6,13 +6,55 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Estourando balões</title>
 		<!-- Bootstrap -->
-		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/jogo.css">
 
 		<script type="text/javascript" src="js/jogo.js"></script>
 	</head>
 	<body onload="iniciaJogo()">
-		<div style="float:left; width:auto; height:500px; background: #FFF; margin: 5px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 geral">
+					<div class="titulo">
+						<h2>Estoure todos os baloes antes que o tempo acabe</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3 geral">
+					<p> Baloes </p>
+					<p> Baloes </p>
+					<p> Baloes </p>
+					<p> Baloes </p>
+					<p> Baloes </p>
+					<p> Baloes </p>					
+					<p> Baloes </p>					
+					<p> Baloes </p>					
+				</div>
+				<div class="col-md-9 geral posicao">
+					<div class="cenario">
+						<img src="imagens/cenario.png">
+					</div>					
+				</div>
+				<div class="col-md-3 geral cronometro">
+					<p> Cronometro </p>
+					<p> Cronometro </p>
+					<p> Cronometro </p>
+					<p> Cronometro </p>
+					<p> Cronometro </p>
+					<p> Cronometro </p>
+					<p> Cronometro </p>
+					<p> Cronometro </p>									
+				</div>
+			</div>
+
+			<div class="row">
+				
+			</div>
+
+		</div>
+		<!-- <div style="float:left; width:auto; height:500px; background: #FFF; margin: 5px;">
 			<table border="0">
 				<tr>
 					<td>
@@ -43,7 +85,7 @@
 				</tr>
 			</table>
 		</div>
-		<div id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario.png'); background-position: bottom;"></div>
+		<div id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario.png'); background-position: bottom;"></div> -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

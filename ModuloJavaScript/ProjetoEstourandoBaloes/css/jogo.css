@@ -6,24 +6,54 @@
 /* ===================== Typography ===================== */
 
 /* ===================== Layout ===================== */
-.balao{
-	border: 1px solid red;
-	margin-top: 10px;
-	padding: 10px;
-	float: left;
-	
+h1, h2, h3, h4, h5, h6{
+	margin: 10px;
+	padding: 0;
 }
-.balao2{
+.geral{
 	border: 1px solid red;
-	margin-top: 10px;
-	padding: 10px;
-	float: left;
-	
 }
-.cenario{
-	border: 1px solid red;
-	margin-top: 10px;
-	float: right;
+
+.titulo{
 	display: table;
-	
+	margin: 0 auto;
 }
+
+
+.posicao{
+	display: inline-block;
+	position: relative;
+	float: right;
+}
+
+.cronometro{
+	display: inline-block;
+	position: relative;
+	float: left;	
+}
+
+
+
+
+
+
+/*.cenario{
+	background: url('../imagens/cenario.png'); 
+	display: table;
+	margin: 0 auto;
+	float: left;
+}
+
+.cronometro{
+	background: url(../imagens/cronometro.png) no-repeat;
+	display: block;
+	margin-top: 30px;
+	margin-left: 10px; 
+	height: 135px;
+	color: transparent;
+	text-align: center;	
+}
+#cronometro{
+	color: red; 
+	font-size: 30px
+}*/
