@@ -26,25 +26,44 @@ h1, h2, h3, h4, h5, h6{
 	float: right;
 }
 
-.cronometro{
-	display: inline-block;
-	position: relative;
-	float: left;	
-}
-
-
-
-
-
-
-/*.cenario{
-	background: url('../imagens/cenario.png'); 
+.img-balao{
 	display: table;
 	margin: 0 auto;
-	float: left;
+	height: 100px;
 }
 
 .cronometro{
+	background: url(../imagens/cronometronovo-resized.png) no-repeat;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	width: 170px;
+	height: 200px;
+}
+
+#cronometro{
+	margin-top: 50px;
+}
+
+.pontos{
+	text-align: center;
+	background: url(../imagens/pontos-resized.png) no-repeat;
+	background-position: center;
+	height: 100px;
+}
+
+#baloes_inteiros, #baloes_estourados{
+	
+}
+.cenario{
+	/*padding: 30px;*/
+	background: url(../imagens/baloes_fundo2.png) no-repeat;
+	background-position: center;
+	display: table;
+	margin: 0 auto;
+}
+
+/*.cronometro{
 	background: url(../imagens/cronometro.png) no-repeat;
 	display: block;
 	margin-top: 30px;
