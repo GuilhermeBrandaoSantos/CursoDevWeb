@@ -5,74 +5,36 @@
 */
 /* ===================== Typography ===================== */
 
+h1, h2, h3, h4, h5, h6{margin: 10px; padding: 0;}
+
 /* ===================== Layout ===================== */
-h1, h2, h3, h4, h5, h6{
-	margin: 10px;
-	padding: 0;
-}
-.geral{
-	border: 1px solid red;
-}
 
-.titulo{
-	display: table;
-	margin: 0 auto;
-}
+body{background-color: #e4f4f1;}
 
+.jogo{margin-top: 30px;}
 
-.posicao{
-	display: inline-block;
-	position: relative;
-	float: right;
-}
+.container{margin-top: 20px;}
 
-.img-balao{
-	display: table;
-	margin: 0 auto;
-	height: 100px;
-}
+.titulo{display: table;	margin: 0 auto;}
 
-.cronometro{
-	background: url(../imagens/cronometronovo-resized.png) no-repeat;
-	display: table;
-	margin: 0 auto;
-	text-align: center;
-	width: 170px;
-	height: 200px;
-}
+.posicao{display: inline-block;	position: relative;	float: right;}
+
+.img-balao{display: table; margin: 7px auto; padding: 0px;}
+
+.cronometro{display: table;	margin: 0 auto;}
 
 #cronometro{
-	margin-top: 50px;
+	font-size: 30px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: -25px;
+    color: red;    
 }
 
-.pontos{
-	text-align: center;
-	background: url(../imagens/pontos-resized.png) no-repeat;
-	background-position: center;
-	height: 100px;
-}
+.background_cronometro{padding: 40px; display: table; margin: 0 auto;}
 
-#baloes_inteiros, #baloes_estourados{
-	
-}
-.cenario{
-	/*padding: 30px;*/
-	background: url(../imagens/baloes_fundo2.png) no-repeat;
-	background-position: center;
-	display: table;
-	margin: 0 auto;
-}
+.background_pontos{display: table; margin: 0 auto;}
 
-/*.cronometro{
-	background: url(../imagens/cronometro.png) no-repeat;
-	display: block;
-	margin-top: 30px;
-	margin-left: 10px; 
-	height: 135px;
-	color: transparent;
-	text-align: center;	
-}
-#cronometro{
-	color: red; 
-	font-size: 30px
-}*/
+.pontos{font-size: 30px; position: absolute; margin-top: 21px; margin-left: 58px;}
+
+.cenario{background: url(../imagens/baloes_fundo2.png) no-repeat; background-position: center; display: table; margin: 0 auto;}

@@ -13,22 +13,22 @@ function iniciaJogo() {
 	var tempo_segundos = 0;
 
 	if (nivel_jogo == 1) {	// 1 Facil --> 120 segundos 	//
-		tempo_segundos = 120;								//
+		tempo_segundos = 180;								//
 	}														//	
 															//	
 	if (nivel_jogo == 2) {	// 2 Normal --> 60 segundos 	// Essa condição pega o nivel que foi passado e armazenado
-		tempo_segundos = 60;								// via url compara esse valor para determinar a quantidade
+		tempo_segundos = 90;								// via url compara esse valor para determinar a quantidade
 	}														// de tempo que o usuario tera em cada nivel
 															//
 	if (nivel_jogo == 3) {	// 3 Dificil --> 30 segundos 	//
-		tempo_segundos = 30;								//
+		tempo_segundos = 45;								//
 	}														//
 
 	// O innerHTML recupera a tag e insere uma tag ou valor dentro da mesma
 	document.getElementById('cronometro').innerHTML = tempo_segundos;
 
 	// quantidade baloes para preencher o cenario
-	var	qntd_baloes = 160;
+	var	qntd_baloes = 220;
 	cria_baloes(qntd_baloes);
 
 	// Inserindo dentro ta tag a quantidade de baloes inteiros ou estourados
@@ -55,7 +55,7 @@ function contagem_tempo(segundos) {
 
 function game_over() {
 	remove_eventos_baloes();
-	alert("Você perdeu !!! Não estourou todos os balões.") // Aviso que o jogo terminou
+	// alert("Você perdeu !!! Não estourou todos os balões.") // Aviso que o jogo terminou
 }
 
 function cria_baloes(qntd_baloes) {
@@ -65,7 +65,7 @@ function cria_baloes(qntd_baloes) {
 		
 		var	balao = document.createElement("img");	// Cria um elemento, neste caso a Tag IMG do HTML
 		balao.src = 'imagens/balao_azul_pequeno.png';	// Insrindo uma imagem 
-		balao.style.margin = '5px';    // Aplicando estilos
+		balao.style.margin = '3px';    // Aplicando estilos
 		balao.id = 'balao' + i;    // Adiciona um ID diferente a cada execução do loop
 		balao.onclick = function () {estourar(this)}	// This referencia o proprio elemento
 		document.getElementById('cenario').appendChild(balao);
