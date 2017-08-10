@@ -55,7 +55,7 @@ function contagem_tempo(segundos) {
 
 function game_over() {
 	remove_eventos_baloes();
-	// alert("Você perdeu !!! Não estourou todos os balões.") // Aviso que o jogo terminou
+	alert("Você perdeu !!! Não estourou todos os balões.") // Aviso que o jogo terminou
 }
 
 function cria_baloes(qntd_baloes) {
