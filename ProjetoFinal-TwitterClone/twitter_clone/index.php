@@ -1,5 +1,9 @@
 <?php
 
+	session_start();
+	unset($_SESSION['usuario']);
+	unset($_SESSION['email']);	
+
 	$erro = isset($_GET['erro']) ? $_GET['erro'] : 0 ;
 
 ?>
@@ -24,7 +28,7 @@
 					}else{
 						$('#campo_usuario').css({'border-color' : '#CCC'});						
 					}
-					
+
 					if ($('#campo_senha').val() == '') {
 						$('#campo_senha').css({'border-color' : '#A94442'});
 						campo_vazio = true;					
