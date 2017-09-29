@@ -1,10 +1,9 @@
 <?php
-    session_start();
 
     require_once('conexaoBD.php');
 
     $usuario = $_POST['usuario'];
-    $senha = md5($_POST['senha']);
+    $senha = $_POST['senha'];
 
     $sql = "SELECT * FROM tb_usuarios WHERE nome_usuario = '$usuario' AND senha = '$senha' ";
 
@@ -17,10 +16,7 @@
         $dados_usuario = mysqli_fetch_array($resuldado_id);   
         
         if (isset($dados_usuario ['usuario']) || isset($dados_usuario ['senha'])) {
-            header('Location: home.php');
-
-            $_SESSION['usuario'] = $dados_usuario ['usuario'];
-            $_SESSION['email'] = $dados_usuario ['email'];            
+            echo 'Usuário e senha corretos';
         }else {
             header('Location: index.php?erro=1');
         }
