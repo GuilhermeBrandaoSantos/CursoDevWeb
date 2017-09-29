@@ -6,7 +6,7 @@
     $usuario = $_POST['usuario'];
     $senha = md5($_POST['senha']);
 
-    $sql = "SELECT * FROM tb_usuario where usuario = '$usuario' and senha = '$senha' ";
+    $sql = "SELECT * FROM tb_usuarios WHERE nome_usuario = '$usuario' AND senha = '$senha' ";
 
     $conexao = new Conexao();
     $link = $conexao->conecta_mysql();
@@ -26,7 +26,7 @@
         }
     }else{
         echo "Erro na execução da solicitação, por favor tente novamente mais tarde!
-              Se o problema persistir contate o administrador so sistema."; 
+              Se o problema persistir contate o administrador do sistema."; 
     }
 
 ?>
