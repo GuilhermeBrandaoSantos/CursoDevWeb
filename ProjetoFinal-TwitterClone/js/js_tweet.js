@@ -8,9 +8,18 @@ $(document).ready(function(){
                 data: $('#form_tweet').serialize(),
                 success: function(data){
                     $('#input_tweet').val('');
-                    alert(data);
+                    atualizarTweet();                
                 }
             })
         }
     });
+    function atualizarTweet() {
+        $.ajax({
+            url: 'get_tweet.php',
+            success: function(data) {
+                $('#tweets').html(data);
+            }
+        })
+    }
+    atualizarTweet();
 });

@@ -69,6 +69,9 @@
 							</form>
 						</div>
 					</div>
+					<div class="list-group" id="tweets">
+						
+					</div>
 				</div>
 				<div class="col-md-3">
 				<div class="panel panel-default">
