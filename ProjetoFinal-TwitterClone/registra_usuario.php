@@ -4,10 +4,12 @@
 
     $usuario = $_POST['usuario'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = md5($_POST['senha']);
 
     $conexao = new Conexao();
     $link = $conexao->conecta_mysql();
+
+    $usuario_existe = false;
 
     // verificação de usuario
     $sql = "SELECT * FROM tb_usuarios WHERE nome_usuario = '$usuario' AND email = '$email'";
@@ -16,12 +18,22 @@
 
         $dados_usuario = mysqli_fetch_array($resultado);
 
-        if (isset($dados_usuario['usuario']) && isset($dados_usuario['email'])) {
-            echo 'Usuário e/ou email ja cadastrado(s)';
+        if (isset($dados_usuario['nome_usuario']) && isset($dados_usuario['email'])) {
+            $usuario_existe = true;
+        }else{
+            echo 'Erro ao tentar localizar o registro';
         }
     }
 
-    die();
+    if ($usuario_existe) {
+        
+        $retorno_erro.="erro_usuario=1&";
+
+        header('Location: inscrevase.php?'.$retorno_erro);
+        die();
+    }
+
+    
     $sql = "INSERT INTO tb_usuarios (nome_usuario, email, senha) VALUES ('$usuario', '$email', '$senha')";
 
     //executar a query

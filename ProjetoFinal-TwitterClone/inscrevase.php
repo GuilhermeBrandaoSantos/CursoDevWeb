@@ -1,3 +1,9 @@
+<?php
+
+	$erro_usuario = isset($_GET['erro_usuario']) ? $_GET['erro_usuario'] : 0;
+
+?>
+
 <!DOCTYPE HTML>
 <html lang="pt-br">
 	<head>
@@ -39,22 +45,30 @@
 	    	<div class="col-md-4">
 	    		<h3>Inscreva-se já.</h3>
 	    		<br />
-				<form method="post" action="registra_usuario.php" id="formCadastrarse">
-					<div class="form-group">
-						<input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário" required="requiored">
-					</div>
+					<form method="post" action="registra_usuario.php" id="formCadastrarse">
+						<div class="form-group">
+							<input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário" required="requiored">
+						</div>
 
-					<div class="form-group">
-						<input type="email" class="form-control" id="email" name="email" placeholder="Email" required="requiored">
-					</div>
-					
-					<div class="form-group">
-						<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required="requiored">
-					</div>
-					
-					<button type="submit" class="btn btn-primary form-control">Inscreva-se</button>
-				</form>
-			</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" name="email" placeholder="Email" required="requiored">
+						</div>
+						
+						<div class="form-group">
+							<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required="requiored">
+						</div>
+
+						<div class="col-md-12">
+						<?php
+							if ($erro_usuario) {
+								echo '<font color="#FF0000">Usuário e/ou e-mail ja cadastrado(s)</font>'; 
+							}
+						?>
+						</div>
+						
+						<button type="submit" class="btn btn-primary form-control">Inscreva-se</button>
+					</form>
+				</div>
 			<div class="col-md-4"></div>
 
 			<div class="clearfix"></div>

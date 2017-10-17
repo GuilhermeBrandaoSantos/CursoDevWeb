@@ -1,0 +1,2 @@
+1 - Assim que o usuario for cadastrado iniciar a sessão e redirecioná-lo para home.
+2 - Entender como são realizado os Trend-Top.
