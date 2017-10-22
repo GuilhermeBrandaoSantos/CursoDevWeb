@@ -22,4 +22,17 @@ $(document).ready(function(){
         })
     }
     atualizarTweet();
+    
+    $('#btn_procurar_pessoa').click(function(){
+        if($('#nome_pessoa').val().length > 0){
+            $.ajax({
+                url: 'get_pessoas.php',
+                method: 'post',
+                data: $('#form_procurar_pessoas').serialize(),
+                success: function(data){
+                    alert(data);               
+                }
+            })
+        }
+    });  
 });
