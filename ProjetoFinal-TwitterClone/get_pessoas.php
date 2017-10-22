@@ -21,6 +21,10 @@
         while ($registro = mysqli_fetch_array($resultado, MYSQLI_ASSOC)) {
             echo '<a href="#" class="list-group-item">';
                 echo '<strong>'.$registro['nome_usuario'].'</strong> <small> - '.$registro['email'].'</small> ';
+                echo '<p class="list-group-item-text pull-right">';
+                    echo '<button type="button" class="btn btn-default">Seguir</button>';
+                echo '</p>';
+                echo '<div class="clearfix"></div>';
             echo '</a>';             
         }
     }else{
