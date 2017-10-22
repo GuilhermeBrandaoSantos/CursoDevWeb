@@ -13,14 +13,14 @@
     $conexao = new Conexao();
     $link = $conexao->conecta_mysql();    
 
-    $sql = "SELECT * FROM tb_usuarios WHERE nome_usuario = '$nome_pessoa' AND id <> $id_usuario ";
+    $sql = "SELECT * FROM tb_usuarios WHERE nome_usuario like '%$nome_pessoa%' AND id <> $id_usuario ";
 
     $resultado = mysqli_query($link, $sql);
 
     if ($resultado) {
         while ($registro = mysqli_fetch_array($resultado, MYSQLI_ASSOC)) {
             echo '<a href="#" class="list-group-item">';
-                echo '<strong>Nome</strong> <small> - Email</small> ';
+                echo '<strong>'.$registro['nome_usuario'].'</strong> <small> - '.$registro['email'].'</small> ';
             echo '</a>';             
         }
     }else{

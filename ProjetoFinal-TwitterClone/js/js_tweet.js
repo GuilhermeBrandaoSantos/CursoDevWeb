@@ -30,7 +30,7 @@ $(document).ready(function(){
                 method: 'post',
                 data: $('#form_procurar_pessoas').serialize(),
                 success: function(data){
-                    alert(data);               
+                    $('#pessoas').html(data);               
                 }
             })
         }
