@@ -22,10 +22,10 @@
             $_SESSION['nome_usuario'] = $dados_usuario ['nome_usuario'];
             $_SESSION['email_usuario'] = $dados_usuario ['email'];
 
-            header('Location: home.php');
+            header('Location: ../view/home.php');
 
         } else {
-            header('Location: index.php?erro=1');
+            header('Location: ../view/index.php?erro=1');
         }
     } else {    
         echo 'Erro na execução da consulta, favor entrar em contato com o admin do site';

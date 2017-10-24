@@ -14,7 +14,7 @@
         $conexao = new Conexao();
         $link = $conexao->conecta_mysql();    
     
-        $sql = "INSERT INTO tb_tweet (id_usuario, tweet) VALUES ('$id_usuario', '$input_tweet')";
+        $sql = "INSERT INTO tb_tweet (id_usuario, tweet) VALUES ($id_usuario, '$input_tweet')";
     }    
     
     if(mysqli_query($link, $sql)){

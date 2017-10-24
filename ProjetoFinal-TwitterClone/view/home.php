@@ -14,11 +14,11 @@
 		<!-- jquery - link cdn -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 		<!-- Icon -->
-    <link rel="icon" sizes="192x192" href="imagens/icone_twitter.png">
+    <link rel="icon" sizes="192x192" href="../imagens/icone_twitter.png">
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
-		<link rel="stylesheet" href="estilo_home.css">
-		<script src="js/js_tweet.js"></script>
+		
+		<script src="js/jsTweet.js"></script>
 	</head>
 	<body>
 		<!-- Static navbar -->
@@ -78,7 +78,7 @@
 				<div class="col-md-3">
 				<div class="panel panel-default">
 						<div class="panel-body">
-							<h4><a href="procurar_pessoas.php">Procurar por pessoas</a></h4>													
+							<h4><a href="procurarPessoas.php">Procurar por pessoas</a></h4>													
 						</div>
 					</div>
 				</div>

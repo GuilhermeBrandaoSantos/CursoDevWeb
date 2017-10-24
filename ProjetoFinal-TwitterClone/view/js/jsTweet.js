@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('#btn_tweet').click(function(){
         if($('#input_tweet').val().length > 0){
             $.ajax({
-                url: 'incluir_tweet.php',
+                url: '../model/incluirTweet.php',
                 method: 'post',
                 data: $('#form_tweet').serialize(),
                 success: function(data){
@@ -15,7 +15,7 @@ $(document).ready(function(){
     });
     function atualizarTweet() {
         $.ajax({
-            url: 'get_tweet.php',
+            url: '../model/getTweet.php',
             success: function(data) {
                 $('#tweets').html(data);
             }
@@ -26,11 +26,24 @@ $(document).ready(function(){
     $('#btn_procurar_pessoa').click(function(){
         if($('#nome_pessoa').val().length > 0){
             $.ajax({
-                url: 'get_pessoas.php',
+                url: '../model/getPessoas.php',
                 method: 'post',
                 data: $('#form_procurar_pessoas').serialize(),
                 success: function(data){
-                    $('#pessoas').html(data);               
+                    $('#pessoas').html(data);
+                    
+                    $('.btn_seguir').click(function(){
+                        var id_usuario = $(this).data('id_usuario');
+                        
+                        $.ajax({
+                            url: '../model/seguirUsuario.php',
+                            method: 'post',
+                            data: {seguir_id_usuario: id_usuario},
+                            success: function(data){
+                               alert('registro ok');
+                            }
+                        })                   
+                    })
                 }
             })
         }

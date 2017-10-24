@@ -17,7 +17,7 @@
 		<!-- jquery - link cdn -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 		<!-- Icon -->
-    <link rel="icon" sizes="192x192" href="imagens/icone_twitter.png">		
+    <link rel="icon" sizes="192x192" href="../imagens/icone_twitter.png">		
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
 		<script>
@@ -68,7 +68,7 @@
 						<div class="col-md-12">
 						<p>Você possui uma conta?</h3>
 						<br />
-					<form method="post" action="valida_acesso.php" id="formLogin">
+					<form method="post" action="../model/validaAcesso.php" id="formLogin">
 						<div class="form-group">
 							<input type="text" class="form-control" id="campo_usuario" name="usuario" placeholder="Usuário" />
 						</div>

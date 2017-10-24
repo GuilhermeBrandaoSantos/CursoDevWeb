@@ -29,7 +29,7 @@
         
         $retorno_erro.="erro_usuario=1&";
 
-        header('Location: inscrevase.php?'.$retorno_erro);
+        header('Location: view/inscrevase.php?'.$retorno_erro);
         die();
     }
 
