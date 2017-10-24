@@ -19,23 +19,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
 		
 		<script src="js/jsTweet.js"></script>
-		<!-- <script>
-			$(document).ready(function(){
-				// Associar evento de click no botão de Tweet
-				$('#btn_procurar_pessoa').click(function(){
-					if($('#nome_pessoa').val().length > 0){
-						$.ajax({
-							url: 'get_pessoas.php',
-							method: 'post',
-							data: $('#form_procurar_pessoas').serialize(),
-							success: function(data){
-								alert(data);               
-							}
-						})
-					}
-				});  
-			});
-		</script> -->
 	</head>
 	<body>
 		<!-- Static navbar -->
@@ -63,7 +46,7 @@
 	    	<div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <h4><?php echo $_SESSION['nome_usuario']; ?></h4>
+						<h4><a href="home.php"><?php echo $_SESSION['nome_usuario']; ?></a></h4>
                         <hr>
                         <div class="col-md-6">
                             TWEETS <br>

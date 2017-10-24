@@ -45,7 +45,7 @@
 	    	<div class="col-md-3">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<h4><?php echo $_SESSION['nome_usuario']; ?></h4>
+							<h4><a href="home.php"><?php echo $_SESSION['nome_usuario']; ?></a></h4>
 							<hr>
 							<div class="col-md-6">
 								TWEETS <br>
