@@ -1,10 +1,7 @@
-<?php
+<?php	
+require_once('../controller/sessaoController.php');
+require_once('../model/qtdeTweetSeguidores.php');
 	
-	session_start();
-
-	if(!isset($_SESSION['nome_usuario'])){
-		header('Location: index.php?erro=1');
-	}
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
@@ -65,12 +62,12 @@
 							<hr>
 							<div class="col-md-6">
 								TWEETS <br>
-								1
+								<?= $qtde_tweets?>
 							</div>
 
 							<div class="col-md-6">
 								SEGUIDORES <br>
-								1	
+								<?= $qtde_seguidores?>	
 							</div>							
 						</div>
 					</div>	

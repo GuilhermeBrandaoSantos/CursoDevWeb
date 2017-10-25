@@ -42,8 +42,7 @@ $(document).ready(function(){
                             url: '../model/seguirUsuario.php',
                             method: 'post',
                             data: {seguir_id_usuario: id_usuario},
-                            success: function(data){
-                               alert('Seguindo!');
+                            success: function(data){                               
                             }
                         });                  
                     });
@@ -57,8 +56,7 @@ $(document).ready(function(){
                             url: '../model/deixarSeguirUsuario.php',
                             method: 'post',
                             data: {deixar_seguir_id_usuario: id_usuario},
-                            success: function(data){
-                               alert('Deixou de Seguir!');
+                            success: function(data){                               
                             }
                         });                  
                     });
